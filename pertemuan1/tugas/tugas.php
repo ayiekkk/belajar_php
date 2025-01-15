@@ -11,7 +11,7 @@ define("PAJAK", 0.12);
 
 $jumlahPerProyek = 3;
 
-$totalPendapatan = GAJI + BONUS * $jumlahPerProyek;
+$totalPendapatan = GAJI + (BONUS * $jumlahPerProyek);
 $totalBersih = $totalPendapatan - ($totalPendapatan * PAJAK);
 
 echo "gaji yang anda dapat Rp. " . number_format(GAJI,0,',','.') ."<br>";
