@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <style>
     form {
         display: flex;
@@ -17,6 +18,9 @@
 </style>
 </head>
 <body>
+    <h3>Nama    : Mohamad Alief Firmansyah</h3>
+    <h3>Absen   : 18 </h3>
+    <br>
     <form action="">
     <table border=1 style="border-collapse : collapse; width : 50%;">
         <tr>
@@ -47,15 +51,31 @@
             <td>Jenis Kelamin</td>
             <td>:</td>
             <td>
-                <input type="radio" name="gender" id="" value="L"> Laki - laki
-                <input type="radio" name="gender" id="" value="P"> Perempuan
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" value="L">
+                    Laki - laki
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" value="P">
+                    Perempuan
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" value="X">
+                    Tidak Diketahui
+                    </label>
+                </div>
             </td>
         </tr>
         <tr>
             <td>Agama</td>
             <td>:</td>
             <td>
-                <select name="agama" id="">
+                <select class="form-select form-select-sm" aria-label="Small select example">
                     <option value="islam">Islam</option>
                     <option value="kristen">Kristen</option>
                     <option value="katolik">Katolik</option>
@@ -68,7 +88,12 @@
         <tr>
             <td>Alamat</td>
             <td>:</td>
-            <td><textarea name="alamat" id="" cols="30" rows="10"></textarea></td>
+            <td>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </td>
         </tr>
         <tr>
             <td>Asal Sekolah</td>
@@ -79,7 +104,7 @@
             <td>Pilihan Jurusan 1</td>
             <td>:</td>
             <td>
-                <select name="jurusan" id="">
+                <select class="form-select form-select-sm" aria-label="Small select example">
                     <option value="AKL">Akutansi dan Keuangan Lembaga</option>
                     <option value="MPLB">Manajemen Perkantoran & Bisnis</option>
                     <option value="PM">Pemasaran</option>
@@ -97,7 +122,7 @@
             <td>Pilihan Jurusan 2</td>
             <td>:</td>
             <td>
-            <select name="jurusan" id="">
+                <select class="form-select form-select-sm" aria-label="Small select example">
                     <option value="AKL">Akutansi dan Keuangan Lembaga</option>
                     <option value="MPLB">Manajemen Perkantoran & Bisnis</option>
                     <option value="PM">Pemasaran</option>
@@ -115,19 +140,79 @@
             <td>Ekstrakulikuler</td>
             <td>:</td>
             <td>
-                <select name="ekstra" id="">
-                    <option value="osis">OSIS</option>
-                    <option value="pramuka">Pramuka</option>
-                    <option value="PA">Pecinta Alam</option>
-                    <option value="remas">Remaja Masjid AL-kautsar</option>
-                    <option value="pmr">Palang Merah Remaja</option>
-                    <option value="futsal">Futsal</option>
-                    <option value="basket">Basket</option>
-                    <option value="voli">Voli</option>
-                    <option value="teater">Teater Kusuma</option>
-                    <option value="LA">Laskar Hijau</option>
-                    <option value="GDS">Gerakan Disiplin Siswa</option>
-                </select>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="osis" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    OSIS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="DA" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Pramuka
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="PA" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Pecinta Alam
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="GDS" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Gerakan Disiplin Siswa
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="pmr" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Palang Merah Remaja
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Encasa" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    English Club Esemkasa
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="LA" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Laskar Hijau
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="remas" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Remaja Masjid Al-kautsar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="futsal" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Futsal
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="voli" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Voli
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="basket" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Basket
+                    </label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td colspan="3" style="text-align: end;">
+            <button type="submit" name="submit" class="btn btn-outline-success">Success</button>
             </td>
         </tr>
     </table>
