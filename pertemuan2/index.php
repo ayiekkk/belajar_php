@@ -56,12 +56,12 @@
             <td>:</td>
             <td>
                 <select name="agama" id="">
-                    <option value="islam">Aku Islam bang</option>
-                    <option value="kristen">Aku Kristen bang</option>
-                    <option value="katolik">Aku Katolik bang</option>
-                    <option value="hindu">Aku Hindu bang</option>
-                    <option value="buddha">Aku Biddha bang</option>
-                    <option value="konghucu">Aku Konghucu bang</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Konghucu</option>
                 </select>
             </td>
         </tr>
