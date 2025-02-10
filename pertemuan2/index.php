@@ -12,16 +12,25 @@
         align-items: center;
     }
 
+
+    table {
+        box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.5);
+    }
+
     td {
         padding: 1em;
     }
 </style>
 </head>
 <body>
+
+
+
+
     <h3>Nama    : Mohamad Alief Firmansyah</h3>
     <h3>Absen   : 18 </h3>
     <br>
-    <form action="">
+    <form action="halaman2.php" method="get">
     <table border=1 style="border-collapse : collapse; width : 50%;">
         <tr>
             <td>NISN</td>
@@ -52,20 +61,20 @@
             <td>:</td>
             <td>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1" value="L">
+                    <input name="kelamin" class="form-check-input" type="radio" id="flexRadioDefault1" value="L">
+                    <label class="form-check-label" for="flexRadioDefault1">
                     Laki - laki
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1" value="P">
+                    <input name="kelamin" class="form-check-input" type="radio" id="flexRadioDefault1" value="P">
+                    <label class="form-check-label" for="flexRadioDefault1">
                     Perempuan
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1" value="X">
+                    <input name="kelamin" class="form-check-input" type="radio" id="flexRadioDefault1" value="X">
+                    <label class="form-check-label" for="flexRadioDefault1">
                     Tidak Diketahui
                     </label>
                 </div>
@@ -75,7 +84,8 @@
             <td>Agama</td>
             <td>:</td>
             <td>
-                <select class="form-select form-select-sm" aria-label="Small select example">
+                <select name="agama" class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="">PILIH AGAMA</option>
                     <option value="islam">Islam</option>
                     <option value="kristen">Kristen</option>
                     <option value="katolik">Katolik</option>
@@ -91,7 +101,7 @@
             <td>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea name="alamat" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </td>
         </tr>
@@ -104,7 +114,8 @@
             <td>Pilihan Jurusan 1</td>
             <td>:</td>
             <td>
-                <select class="form-select form-select-sm" aria-label="Small select example">
+                <select name="jurusan1" class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="">PILIH KEJURUAN</option>
                     <option value="AKL">Akutansi dan Keuangan Lembaga</option>
                     <option value="MPLB">Manajemen Perkantoran & Bisnis</option>
                     <option value="PM">Pemasaran</option>
@@ -122,7 +133,8 @@
             <td>Pilihan Jurusan 2</td>
             <td>:</td>
             <td>
-                <select class="form-select form-select-sm" aria-label="Small select example">
+                <select name="jurusan2" class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="">PILIH KEJURUAN</option>
                     <option value="AKL">Akutansi dan Keuangan Lembaga</option>
                     <option value="MPLB">Manajemen Perkantoran & Bisnis</option>
                     <option value="PM">Pemasaran</option>
@@ -140,68 +152,68 @@
             <td>Ekstrakulikuler</td>
             <td>:</td>
             <td>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="osis" id="flexCheckDefault">
+            <div class="form-check">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="osis" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     OSIS
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="DA" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="DA" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Pramuka
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="PA" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="PA" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Pecinta Alam
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="GDS" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="GDS" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Gerakan Disiplin Siswa
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="pmr" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="pmr" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Palang Merah Remaja
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Encasa" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="Encasa" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     English Club Esemkasa
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="LA" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="LA" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Laskar Hijau
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="remas" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="remas" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Remaja Masjid Al-kautsar
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="futsal" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="futsal" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Futsal
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="voli" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="voli" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Voli
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="basket" id="flexCheckDefault">
+                    <input name="ekstra[]" class="form-check-input" type="checkbox" value="basket" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                     Basket
                     </label>
@@ -217,5 +229,8 @@
         </tr>
     </table>
     </form>
+
+
+
 </body>
 </html>
