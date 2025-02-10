@@ -33,7 +33,7 @@ if(isset($_POST['npwp'])) {
     $npwp = $_POST['npwp'];
 
     if($npwp == 1){
-        // echo "Memiliki NPWP";
+        echo "<script>alert('Anda memliki NPWP');</script>";
         $gajiPokok = $_POST['gaji'];
         $gajiSetahun = $gajiPokok * 12;
 
@@ -55,7 +55,7 @@ if(isset($_POST['npwp'])) {
         echo "Anda tidak diharuskan Membayar pajak";
         }
     } else if($npwp == 0) {
-        // echo "Tidak ada NPWP";
+        echo "<script>alert('Anda tidak memliki NPWP');</script>";
         $gajiPokok = $_POST['gaji'];
         $gajiSetahun = $gajiPokok * 12;
 
