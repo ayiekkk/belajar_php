@@ -18,6 +18,11 @@
     td {
         padding: 1em;
     }
+
+    h1 {
+        font-size: 70px;
+        align-items: center;
+    }
 </style>
 <body>
 
@@ -37,42 +42,42 @@ if(isset($_POST['npwp'])) {
         $gajiPokok = $_POST['gaji'];
         $gajiSetahun = $gajiPokok * 12;
 
-        echo "gaji bulanan anda Rp." . number_format($gajiPokok, 0, ',', '.');
+        echo "<script>alert('gaji bulanan anda Rp." . number_format($gajiPokok, 0, ',', '.') ."'); </script>";
         echo "<br>";
         
-        echo "gaji 1 tahun anda Rp." . number_format($gajiSetahun, 0, ',', '.');
+        echo "<script>alert('gaji 1 tahun anda Rp." . number_format($gajiSetahun, 0, ',', '.') ."'); </script>";
         echo "<br>";
 
         if ($gajiSetahun > 54000000) {
-            echo "Anda diharuskan Membayar pajak sebesar 15%";
+            echo "<script>alert('Anda diharuskan Membayar pajak sebesar 15%');</script>";
 
             $gajiBersih = $gajiSetahun - ($gajiSetahun * 15/100);
 
             echo "<br>";
             
-            echo "Jadi gaji bersih anda adalah Rp. ". number_format($gajiBersih, 0, ',', '.');
+            echo "<script>alert('Jadi gaji bersih anda adalah Rp. ". number_format($gajiBersih, 0, ',', '.') ."');</script>";
         } else {
-        echo "Anda tidak diharuskan Membayar pajak";
+        echo "<script>alert('Anda tidak diharuskan Membayar pajak');</script>";
         }
     } else if($npwp == 0) {
         echo "<script>alert('Anda tidak memliki NPWP');</script>";
         $gajiPokok = $_POST['gaji'];
         $gajiSetahun = $gajiPokok * 12;
 
-        echo "gaji bulanan anda Rp." . number_format($gajiPokok, 0, ',', '.');
+        echo "<script>alert('gaji bulanan anda Rp." . number_format($gajiPokok, 0, ',', '.') ."');</script>";
         echo "<br>";
         
-        echo "gaji 1 tahun anda Rp." . number_format($gajiSetahun, 0, ',', '.');
+        echo "<script>alert('gaji 1 tahun anda Rp." . number_format($gajiSetahun, 0, ',', '.') ."');</script>";
         echo "<br>";
 
         if ($gajiSetahun > 54000000) {
-            echo "Anda diharuskan Membayar pajak sebesar 20%";
+            echo "<script>alert('Anda diharuskan Membayar pajak sebesar 20%');</script>";
 
             $gajiBersih = $gajiSetahun - ($gajiSetahun * 20/100);
 
             echo "<br>";
             
-            echo "Jadi gaji bersih anda adalah Rp. ". number_format($gajiBersih, 0, ',', '.');
+            echo "<script>alert('Jadi gaji bersih anda adalah Rp. ". number_format($gajiBersih, 0, ',', '.') ."');</script>";
         } else {
         echo "Anda tidak diharuskan Membayar pajak";
         }
@@ -128,7 +133,8 @@ if(isset($_POST['npwp'])) {
 <?php 
 
 } else {
-    echo "Tidak ada data yang diproses!";
+    echo "<script>alert('Tidak ada data yang diproses!');</script>";
+    echo "<h1>Not Found!</h1>";
 }
 
 
