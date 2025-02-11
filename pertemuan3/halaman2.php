@@ -26,13 +26,17 @@
 </style>
 <body>
 
-<?php 
+<?php
 
 if(isset($_POST['submit'])) :
 
 ?>
 
 <?php 
+
+$gajiPokok;
+$gajiSetahun;
+$gajiBersih;
 
 if(isset($_POST['npwp'])) {
     $npwp = $_POST['npwp'];
