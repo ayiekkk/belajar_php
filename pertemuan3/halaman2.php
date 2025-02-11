@@ -28,7 +28,7 @@
 
 <?php 
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) :
 
 ?>
 
@@ -79,7 +79,7 @@ if(isset($_POST['npwp'])) {
             
             echo "<script>alert('Jadi gaji bersih anda adalah Rp. ". number_format($gajiBersih, 0, ',', '.') ."');</script>";
         } else {
-        echo "Anda tidak diharuskan Membayar pajak";
+        echo "<script>alert('Anda tidak diharuskan Membayar pajak');</script>";
         }
 
     } else {
@@ -132,13 +132,11 @@ if(isset($_POST['npwp'])) {
 
 <?php 
 
-} else {
+else :
     echo "<script>alert('Tidak ada data yang diproses!');</script>";
     echo "<h1>Not Found!</h1>";
-}
-
-
 ?>
+<?php endif; ?>
 
 
 
