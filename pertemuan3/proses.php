@@ -29,6 +29,7 @@
     
 <?php 
 
+if(isset($_POST['submit'])) {
     
     $nama=$_POST['nama'];
     $divisi=$_POST['divisi'];
@@ -94,6 +95,18 @@
         </tr>
     </table>
 </div>
+
+<?php 
+
+}else {
+?>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>ERROR!!!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-danger="alert" aria-label="Close"></button>
+</div>
+
+<?php } ?>
+
 
 
 
