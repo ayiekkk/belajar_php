@@ -34,13 +34,13 @@
     $divisi=$_POST['divisi'];
     $gajiPokok=floatval($_POST['gaji']);
     $npwp=$_POST['npwp'];
+    $potongan=0;
     
     $gajiSetahun=$gajiPokok*12;
     $batasGaji=54000000;
     
     if($gajiSetahun > $batasGaji){
         $pajak = $npwp == 1 ? 0.15 : 0.20;
-
         
         $potongan=$gajiSetahun*$pajak;
     }

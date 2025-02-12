@@ -19,6 +19,7 @@
     td {
         padding: 1em;
     }
+
 </style>
 <body>
     <form action="proses.php" method="post">
@@ -26,31 +27,57 @@
             <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <td><input type="text" name="nama" id="" required></td>
+                <td>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" name="nama" class="form-control" id="exampleFormControlInput1" placeholder="Masukan nama anda" required>
+                </div>
+                </td>
             </tr>
             <tr>
                 <td>Devisi</td>
                 <td>:</td>
-                <td><input type="text" name="divisi" id="" required></td>
+                <td>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" name="divisi" class="form-control" id="exampleFormControlInput1" placeholder="Masukan divisi anda" required>
+                </div>
+                </td>
             </tr>
             <tr>
                 <td>Gaji</td>
                 <td>:</td>
-                <td><input type="number" name="gaji" id="" required></td>
+                <td>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="number" name="gaji" class="form-control" id="exampleFormControlInput1" placeholder="Masukan gaji anda" required>
+                </div>
+                </td>
             </tr>
             <tr>
                 <td>NPWP</td>
                 <td>:</td>
                 <td>
-                    <input type="radio" name="npwp" id="" value="1" required> IYA
-                    <input type="radio" name="npwp" id="" value="0" required> TIDAK
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="npwp" id="flexRadioDefault1" value="1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Iya
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="npwp" id="flexRadioDefault1" value="0" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Tidak
+                    </label>
+                </div>
+                    
                 </td>
             </tr>
             <tr>
                 <td> </td>
                 <td> </td>
                 <td colspan="3" style="text-align: end;">
-                    <button type="submit" name="submit">KIRIM!!!</button>
+                    <button type="submit" name="submit" class="btn btn-success">Success</button>
                 </td>
             </tr>
         </table>
