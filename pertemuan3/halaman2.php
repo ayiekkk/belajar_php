@@ -25,12 +25,7 @@
     }
 </style>
 <body>
-
-<?php
-
-if(isset($_POST['submit'])) :
-
-?>
+    <?php if(isset($_POST['submit'])) { ?>
 
 <?php 
 
@@ -90,8 +85,6 @@ if(isset($_POST['npwp'])) {
         echo "Not Found";
     }
 }
-
-
 ?>
 
 <div class="form">
@@ -133,14 +126,13 @@ if(isset($_POST['npwp'])) {
         </tr>
     </table>
 </div>
-
-<?php 
-
-else :
+<?php
+}else {
     echo "<script>alert('Tidak ada data yang diproses!');</script>";
     echo "<h1>Not Found!</h1>";
+}
 ?>
-<?php endif; ?>
+
 
 
 
