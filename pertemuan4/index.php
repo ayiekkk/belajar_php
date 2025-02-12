@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    td{
+        padding: 1em;
+    }
+    tr {
+        padding: 1em;
+    }
+</style>
 <body>
-    <form action="">
+    <form action="" method="post" class="form">
         <table>
             <tr>
                 <td>baris</td>
@@ -29,5 +37,26 @@
             </tr>
         </table>
     </form>
+
+
+<?php 
+if(isset($_POST['submit'])){
+$baris = $_POST['baris'];
+$kolom = $_POST['cell'];
+?>
+
+    <table border=1 style="width:50%;">
+    <?php for($i = 1; $i <= $baris; $i++){ ?>
+        <tr>
+            <?php for($j = 1; $j <= $kolom; $j++) { ?>
+            <td>
+                &nbsp;
+            </td>
+            <?php } ?>
+        </tr>
+        <?php } ?>
+    </table>
+<?php } ?>
+
 </body>
 </html>
