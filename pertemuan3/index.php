@@ -14,14 +14,29 @@
         margin-top: 30px;
     }
     table {
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 10px rgba(7, 94, 86, 0.5);
     }
     td {
         padding: 1em;
     }
+    .cv h1{
+        text-align: center;
+        font-size: 80px;
+        color: #A1E3F9;
+    }
+
+    .cv h1 span {
+        color: #009990;
+    }
 
 </style>
 <body>
+
+    <div class="cv">
+        <h1>Tecno<span>Bangsa</span></h1>
+    </div>
+
+
     <form action="proses.php" method="post">
         <table border=1 style="border-collapse : collapse; width : 50%;">
             <tr>
@@ -77,7 +92,7 @@
                 <td> </td>
                 <td> </td>
                 <td colspan="3" style="text-align: end;">
-                    <button type="submit" name="submit" class="btn btn-success">Success</button>
+                    <button type="submit" name="submit" class="btn btn-outline-primary">Success</button>
                 </td>
             </tr>
         </table>

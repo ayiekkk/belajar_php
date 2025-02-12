@@ -14,7 +14,7 @@
         margin-top: 30px;
     }
     table {
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px 10px rgba(7,94,86,0.5);
     }
     td {
         padding: 1em;
