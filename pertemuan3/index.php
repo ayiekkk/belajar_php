@@ -11,38 +11,39 @@
         display: flex;
         justify-content : center;
         align-items: center;
+        margin-top: 30px;
     }
     table {
-        /* box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.5); */
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
     td {
         padding: 1em;
     }
 </style>
 <body>
-    <form action="halaman2.php" method="post">
+    <form action="proses.php" method="post">
         <table border=1 style="border-collapse : collapse; width : 50%;">
             <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <td><input type="text" name="nama" id=""></td>
+                <td><input type="text" name="nama" id="" required></td>
             </tr>
             <tr>
                 <td>Devisi</td>
                 <td>:</td>
-                <td><input type="text" name="devisi" id=""></td>
+                <td><input type="text" name="divisi" id="" required></td>
             </tr>
             <tr>
                 <td>Gaji</td>
                 <td>:</td>
-                <td><input type="number" name="gaji" id=""></td>
+                <td><input type="number" name="gaji" id="" required></td>
             </tr>
             <tr>
                 <td>NPWP</td>
                 <td>:</td>
                 <td>
-                    <input type="radio" name="npwp" id="" value="1"> IYA
-                    <input type="radio" name="npwp" id="" value="0"> TIDAK
+                    <input type="radio" name="npwp" id="" value="1" required> IYA
+                    <input type="radio" name="npwp" id="" value="0" required> TIDAK
                 </td>
             </tr>
             <tr>
