@@ -24,7 +24,6 @@
     </table>
 </form>
 
-
     <?php
 if(isset($_POST['submit'])){
     $angka = $_POST['angka'];

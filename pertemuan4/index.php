@@ -50,7 +50,7 @@ $kolom = $_POST['cell'];
         <tr>
             <?php for($j = 1; $j <= $kolom; $j++) { ?>
             <td>
-                &nbsp;
+                baris <?= $i; ?>, kolom <?= $j; ?>
             </td>
             <?php } ?>
         </tr>
