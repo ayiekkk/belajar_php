@@ -4,28 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <form action="latihan2.php" method="post">
-        <table border=1 style="width:50%; border-collapse : collapse;">
-            <tr>
-                <td>Angka</td>
-                <td>:</td>
-                <td>
-                    <input type="number" name="angka" id="">
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td style="text-align:end; padding-right: 20px;">
-                    <button type="submit" name="submit"  class="btn btn-outline-danger">Run!</button>
-                </td>
-            </tr>
-        </table>
-    </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<form action="" method="post">
+    <table>
+        <tr>
+            <td>Angka</td>
+            <td>:</td>
+            <td>
+                <input type="number" name="angka" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" name="submit">RUN!</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+    <?php
+if(isset($_POST['submit'])){
+    $angka = $_POST['angka'];
+    $n = $angka;
+
+    for($i = 1; $i <= $n; $i++) {
+        for($j = $n; $j > $i - $n; $j--) {
+            echo "&nbsp;";
+        }
+        for($j = $n; $j > $i - $n; $j--) {
+            echo "&nbsp;";
+        }
+        for($k = 1; $k <= $i; $k++) {
+            echo "*";
+        }
+        for($m = 1; $m <= $i - 1;$m++) {
+            echo "*";
+        }
+
+        echo "</br>";
+    }
+
+    if($angka % 2 == 0) {
+        echo "<script>alert('Bilangan Genap')</script>";
+    } else {
+        echo "<script>alert('Bilangan Ganjil')</script>";
+    }
+?>
+
+<?php } ?>
 </body>
 </html>
